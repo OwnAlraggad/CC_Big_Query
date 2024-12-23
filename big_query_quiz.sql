@@ -6,8 +6,8 @@ SELECT
  --s.country_code
  -- region
 FROM `bigquery-public-data.google_trends.top_terms` t
-JOIN `bigquery-public-data.google_trends.international_top_terms` s
-ON t.term = s.term
+--JOIN `bigquery-public-data.google_trends.international_top_terms` s
+--ON t.term = s.term
 WHERE
  t.rank <= 3
  -- Choose only the top term each day.
